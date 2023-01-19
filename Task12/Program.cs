@@ -4,17 +4,17 @@
 // программа выводит остаток от деления.
 // 34, 5 -> не кратно, остаток 4
 // 16, 4 -> кратно
-void Multiplicity(int arg1, int arg2)
-{
-    if (arg1 % arg2 == 0)
-        Console.WriteLine($"{numOne} кратно {numTwo}");
-    else
-        Console.WriteLine($"Остаток {arg1 % arg2}");
-}
-Console.Write("Введите первое число: ");
-int numOne = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int numTwo = Convert.ToInt32(Console.ReadLine());
-Multiplicity(numOne, numTwo);
+// void Multiplicity(int arg1, int arg2)
+// {
+//     if (arg1 % arg2 == 0)
+//         Console.WriteLine($"{numOne} кратно {numTwo}");
+//     else
+//         Console.WriteLine($"Остаток {arg1 % arg2}");
+// }
+// Console.Write("Введите первое число: ");
+// int numOne = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int numTwo = Convert.ToInt32(Console.ReadLine());
+// Multiplicity(numOne, numTwo);
 
 
