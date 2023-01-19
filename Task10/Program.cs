@@ -8,7 +8,10 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number < 0)
     number = (number < 0 ? -number : number);
 if (number < 100 | number > 999)
+{
     Console.WriteLine("Число должно быть трехзначным.");
+    return;
+}
 int FindDigit(int agr1)
 {
     int twoDigit = agr1 / 10 % 10;

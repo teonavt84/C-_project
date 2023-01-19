@@ -5,7 +5,10 @@
 Console.Write("Введите номер дня недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number > 7 || number < 1)
+{
     Console.WriteLine("Значение дня недели должно быть от 1 до 7");
+    return;
+}    
 Console.Write($"{number} день недели ");
 bool Day(int arg)
 {
