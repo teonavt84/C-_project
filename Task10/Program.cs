@@ -17,4 +17,4 @@ int FindDigit(int agr1)
     int twoDigit = agr1 / 10 % 10;
     return twoDigit;
 }
-Console.WriteLine($"Вторая цифра" + " " + FindDigit(number));
+Console.WriteLine("Вторая цифра" + " " + FindDigit(number));
