@@ -19,11 +19,11 @@
 
 // Через цикл for
 Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-void TabSquare(int number)
+int number = Convert.ToInt32(Console.ReadLine());
+void TabSquare(int num)
 {
     for (int i = 1; i <= num; i++)
         Console.WriteLine($"{i} {i * i,5}");
 }
-Console.WriteLine($"Таблица квадратов для числа {num}:");
-TabSquare(num);
+Console.WriteLine($"Таблица квадратов для числа {number}:");
+TabSquare(number);
