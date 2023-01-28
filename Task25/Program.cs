@@ -3,10 +3,6 @@
 // 2, 4 -> 16 3 * 3 * 3 * 3 * 3
 int Exponentiation(int numOne, int numTwo)
 {
-    if (numOne < 0)
-        numOne = numOne * -1;
-    if (numTwo < 0)
-        numTwo = numTwo * -1;
     int expo = 1;
     for (int i = 0; i < numTwo; i++)
     {
@@ -22,4 +18,7 @@ Console.Write("A: ");
 int numberOne = Convert.ToInt32(Console.ReadLine());
 Console.Write("B: ");
 int numberTwo = Convert.ToInt32(Console.ReadLine());
+if (numberOne < 0 | numberTwo < 0)
+    Console.WriteLine("Введенное число должно быть больше нуля.");
+else
 Console.WriteLine($"Возведение в степень числа {numberOne} {numberTwo} {Exponentiation(numberOne, numberTwo)}");
