@@ -39,7 +39,7 @@ Console.Write("Индекс строки: ");
 int indexRows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Индекс столбца: ");
 int indexColumns = Convert.ToInt32(Console.ReadLine());
-if (indexRows <= 0 || indexColumns <= 0)
+if (indexRows < 0 || indexColumns < 0)
 {
 Console.WriteLine("Число должно быть больше нуля.");
 return;
