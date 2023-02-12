@@ -7,6 +7,7 @@
 int[,,] FillMultidimensionalArray(int x, int y, int z, int min, int max)
 {
     Random rnd = new Random();
+    int num = rnd.Next(min, max + 1);
     int[,,] matrix3D = new int[y, y, z];
     for (int i = 0; i < x; i++)
     {
@@ -14,7 +15,9 @@ int[,,] FillMultidimensionalArray(int x, int y, int z, int min, int max)
         {
             for (int k = 0; k < z; k++)
             {
-                matrix3D[i, j, k] = rnd.Next(min, max + 1);
+                matrix3D[i, j, k] = num;
+                num = rnd.Next(min, max + 1);
+
             }
         }
     }
@@ -39,9 +42,5 @@ void PrintMatrixRnd3D(int[,,] matrix3D)
         }
     }
 }
-
-
-
-
 int[,,] mtr = FillMultidimensionalArray(2, 2, 2, 1, 10);
 PrintMatrixRnd3D(mtr);
